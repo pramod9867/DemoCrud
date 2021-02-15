@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Update Details"
+        android:textSize="24sp"
+        android:textColor="#252051"
+        android:textAllCaps="true"
+        android:layout_marginVertical="20dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="25dp"
+        android:padding="10dp"
+        android:background="@drawable/rounded_gray_border"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        android:id="@+id/firstName"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="First Name"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emp_first"
+
+        app:layout_constraintTop_toBottomOf="@id/firstName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginHorizontal="20dp"
+        android:hint="First name"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/emp_first"
+        android:id="@+id/lastName"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Last Name"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emp_last"
+        app:layout_constraintTop_toBottomOf="@id/lastName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Last name"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/emp_last"
+        android:id="@+id/phoneNumber"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Phone Number"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emp_mobile"
+        app:layout_constraintTop_toBottomOf="@id/phoneNumber"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Phone Number"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/emp_mobile"
+        android:id="@+id/designation"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Designation"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emp_designation"
+        app:layout_constraintTop_toBottomOf="@id/designation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Designantion"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/emp_designation"
+        android:id="@+id/workExp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Work Experience"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emp_work"
+        app:layout_constraintTop_toBottomOf="@id/workExp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Work Experience"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/emp_work"
+        android:id="@+id/bankName"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Bank Name"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emp_bank"
+        app:layout_constraintTop_toBottomOf="@id/bankName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Bank Name"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/emp_bank"
+        android:id="@+id/ifsc"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="IFSC Code"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emp_ifsc"
+        app:layout_constraintTop_toBottomOf="@id/ifsc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginHorizontal="20dp"
+        android:hint="IFSC Code"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/emp_ifsc"
+        android:id="@+id/branchName"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Branch name"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emp_branch"
+        app:layout_constraintTop_toBottomOf="@id/branchName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Branch Name"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/emp_branch"
+        android:id="@+id/accountNumber"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Account Number"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emp_acc"
+        app:layout_constraintTop_toBottomOf="@id/accountNumber"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Account Number"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/update"
+        android:layout_height="wrap_content"
+        android:text="UPDATE"
+        android:background="@drawable/orange_button"
+        android:padding="10dp"
+        android:textColor="#FFFF"
+        app:layout_constraintTop_toBottomOf="@id/emp_acc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
